@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">Cat Parallax</string>
     <string name="settings_title">Cat Parallax Settings</string>
-    <string name="wallpaper_description">A cozy orange tabby that reacts to phone tilt, greets you when you unlock, and flicks her tail while she naps.</string>
+    <string name="wallpaper_description">A black tuxedo cat with golden eyes on a moonlit night — reacts to phone tilt, greets you when you unlock, and flicks her tail while she naps.</string>
 
     <!-- Widget / tile -->
     <string name="widget_label">Cat On/Off</string>

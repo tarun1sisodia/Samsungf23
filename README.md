@@ -1,9 +1,9 @@
 # Cat Parallax Live Wallpaper 🐱
 
 A home-screen live wallpaper for the **Samsung Galaxy F23 (Android 14 / One UI 6.1)**:
-a code-drawn orange tabby napping on a dusk hillside who
+a realistic black tuxedo cat with golden eyes on a moonlit night who
 
-- **shifts with phone tilt** — gyroscope parallax across 13 depth layers (stars, hills, glow, cat parts, bokeh),
+- **shifts with phone tilt** — gyroscope parallax across 15 depth layers (moon, stars, hills, glow, cat parts, bokeh),
 - **wakes up and greets you** the moment you unlock (`ACTION_USER_PRESENT`),
 - **stays alive while idle** — randomized blinks and tail flicks every 4–12 s,
 - and can be **stopped instantly** from a home-screen widget, a Quick Settings tile, or the OS itself.
@@ -61,7 +61,7 @@ requires.
 
 ## Using your own cat artwork
 
-The built-in cat is a placeholder drawn from code. If you have layered
+The built-in cat is a realistic black tuxedo cat drawn from code. If you have layered
 artwork (body / tail / ears / eyes as separate PNGs), see
 [`app/src/main/assets/cat/custom/README.md`](app/src/main/assets/cat/custom/README.md)
 — drop the PNGs in, rebuild, done. The loader falls back to the built-in cat
