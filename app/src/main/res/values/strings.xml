@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cat Parallax</string>
+    <string name="settings_title">Cat Parallax Settings</string>
+    <string name="wallpaper_description">A cozy orange tabby that reacts to phone tilt, greets you when you unlock, and flicks her tail while she naps.</string>
+
+    <!-- Widget / tile -->
+    <string name="widget_label">Cat On/Off</string>
+    <string name="cat_on">Cat: ON</string>
+    <string name="cat_off">Cat: OFF</string>
+    <string name="tile_label">Cat</string>
+
+    <!-- Settings -->
+    <string name="master_toggle">Live wallpaper enabled</string>
+    <string name="master_toggle_hint">OFF = soft stop: wallpaper stays applied but freezes (sensors + animations off)</string>
+    <string name="sensitivity">Tilt sensitivity</string>
+    <string name="battery_saver">Battery saver mode</string>
+    <string name="battery_saver_hint">No idle animations, slower sensor polling</string>
+    <string name="layers_header">Layers</string>
+    <string name="preview_hint">Tip: tilt your phone, or tap the preview to see the wake animation</string>
+    <string name="btn_apply">Set as home screen wallpaper</string>
+    <string name="apply_fallback_error">Couldn\'t open the wallpaper picker — set it from Settings → Wallpaper and style</string>
+    <string name="note_stop_title">About stopping the cat</string>
+    <string name="note_stop_body">Widget/tile toggle is a SOFT stop — the cat freezes in place and stops using sensors; one tap brings her back.\n\nForce Stop (Settings → Apps) or swiping the app away is a HARD stop — Android reverts to your previous static wallpaper and you re-select this one to bring the cat back.</string>
+</resources>
