@@ -337,7 +337,7 @@ object SceneLoader {
             )
         }
 
-        // Custom scenes don't carry a gradient; keep the default dusk sky.
+        // Custom scenes don't carry a gradient; keep the default night sky.
         val gradientColors = intArrayOf(
             parseColor("#141034"), parseColor("#4A2C63"),
             parseColor("#C4597B"), parseColor("#FFB37A")
