@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Dusk palette, shared with assets/cat/default_cat.json -->
-    <color name="dusk_top">#141034</color>
-    <color name="dusk_mid">#4A2C63</color>
-    <color name="dusk_low">#C4597B</color>
-    <color name="dusk_horizon">#FFB37A</color>
+    <!-- Night sky palette, shared with assets/cat/default_cat.json -->
+    <color name="dusk_top">#050A1A</color>
+    <color name="dusk_mid">#152050</color>
+    <color name="dusk_low">#2A3D80</color>
+    <color name="dusk_horizon">#0D1225</color>
+    <color name="cat_fur">#1A1A2E</color>
+    <color name="cat_gold">#D4A020</color>
     <color name="widget_text">#FFFFFF</color>
 </resources>

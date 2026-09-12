@@ -1,6 +1,6 @@
 # Bring your own cat (custom layered artwork)
 
-The app ships with a code-drawn orange tabby (dusk gradient, stars). To use
+The app ships with a code-drawn black tuxedo cat (night sky with moon and stars). To use
 YOUR own layered artwork instead, drop PNG files into this folder
 (`app/src/main/assets/cat/custom/`) and rebuild.
 
