@@ -354,24 +354,31 @@ object SceneLoader {
         )
 
         fullBleedLayer("bg", "bg.png", depthBg)?.let { layers.add(it) }
-        layers.add(
-            celLayer("body", "body.png", depthBody, LayerRole.BODY,
-                pivotX = dw / 2f, pivotY = topOffset + 958f)!!
-        )
+
+        // Required cels: if any of them fails to decode, fall back to the
+        // built-in cat instead of crashing the wallpaper engine.
+        val bodyLayer = celLayer("body", "body.png", depthBody, LayerRole.BODY,
+            pivotX = dw / 2f, pivotY = topOffset + 958f)
+        val tailLayer = celLayer("tail", "tail.png", depthTail, LayerRole.TAIL,
+            pivotX = tailPivotX, pivotY = tailPivotY, toggleable = true)
+        val eyesOpenLayer = celLayer("eyes_open", "eyes_open.png", depthEyes, LayerRole.EYES,
+            pivotX = dw / 2f, pivotY = dh / 2f)
+        val eyesClosedLayer = celLayer("eyes_closed", "eyes_closed.png", depthEyes, LayerRole.EYES,
+            pivotX = dw / 2f, pivotY = dh / 2f)
+        if (bodyLayer == null || tailLayer == null ||
+            eyesOpenLayer == null || eyesClosedLayer == null
+        ) return null
+
+        layers.add(bodyLayer)
         celLayer("ear_l", "ear_left.png", depthEars, LayerRole.EAR_LEFT,
             pivotX = 404f, pivotY = topOffset + 316f)?.let { layers.add(it) }
         celLayer("ear_r", "ear_right.png", depthEars, LayerRole.EAR_RIGHT,
             pivotX = 596f, pivotY = topOffset + 316f)?.let { layers.add(it) }
-        celLayer("eyes_open", "eyes_open.png", depthEyes, LayerRole.EYES,
-            pivotX = dw / 2f, pivotY = dh / 2f)?.let { layers.add(it) }
-        celLayer("eyes_closed", "eyes_closed.png", depthEyes, LayerRole.EYES,
-            pivotX = dw / 2f, pivotY = dh / 2f)?.let { layers.add(it) }
+        layers.add(eyesOpenLayer)
+        layers.add(eyesClosedLayer)
         celLayer("eyes_wide", "eyes_wide.png", depthEyes, LayerRole.EYES,
             pivotX = dw / 2f, pivotY = dh / 2f)?.let { layers.add(it) }
-        layers.add(
-            celLayer("tail", "tail.png", depthTail, LayerRole.TAIL,
-                pivotX = tailPivotX, pivotY = tailPivotY, toggleable = true)!!
-        )
+        layers.add(tailLayer)
         fullBleedLayer("fg", "fg.png", depthFg)?.let { layers.add(it) }
 
         return RawScene(
