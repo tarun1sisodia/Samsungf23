@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dusk palette, shared with assets/cat/default_cat.json -->
+    <color name="dusk_top">#141034</color>
+    <color name="dusk_mid">#4A2C63</color>
+    <color name="dusk_low">#C4597B</color>
+    <color name="dusk_horizon">#FFB37A</color>
+    <color name="widget_text">#FFFFFF</color>
+</resources>
